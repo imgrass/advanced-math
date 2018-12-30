@@ -1,0 +1,49 @@
+%字体配置
+
+%%--------------------------------------
+%= font config
+%
+%---------- math font
+%% Usage:
+%% select one of them
+%\usepackage{eulervm}
+\usepackage{txfonts}
+%
+%---------- txt font
+%% Usage:
+%% you can find all the useful fonts by:
+%%  $fc-list
+\usepackage{fontspec}
+%-> for English
+\setmainfont{Times New Roman} %->\rmfamily
+%\setsansfont{} %->\sffamily
+%\setmonofont{} %->\ttfamily
+
+% custom font
+%\newfontfamily\xxx{}
+
+%-> for Chinese
+% for Chinese, some options can be useful
+% [BoldFont=xxx, ItalicFont=xxx, BoldItalicFont=xxx]
+\setCJKmainfont[
+    BoldFont=SimHei,
+    ItalicFont=KaiTi,
+    BoldItalicFont=LiSu
+]{SimSun}
+%\setCJKsansfont{}
+%\setCJKmonofont{}
+
+% custom font
+%\setCJKfamilyfont{xxx}{}
+\setCJKfamilyfont{FtLoli}{Heiti SC}
+\def\ftLoli{\CJKfamily{FtLoli}}
+%%--------------------------------------
+
+
+%%--------------------------------------
+% 字号与行距
+% \zihao 可影响环境和分组内的所有字体大小
+% \zihao{-3} <-小三号
+
+\usepackage{setspace}
+\setstretch{1.5} %<- 设置1.5倍行距
