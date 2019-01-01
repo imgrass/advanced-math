@@ -39,7 +39,7 @@
 \fancypagestyle{plain}{%
     \fancyhf{}
     \lhead{\strut{\copy\tjmark}}
-    \rhead{毕业设计(论文)}                                                
+    \rhead{高等数学}                                                
     \chead{}
     \cfoot{\thepage}                                                
     \renewcommand{\headrulewidth}{0.5pt}  %页眉线宽，设为0可以去页眉线
@@ -54,20 +54,37 @@
 \setcounter{secnumdepth}{4}
 \CTEXsetup[
     format={\zihao{-3}\ftLoli\centering},
-    name={,}, 
+    name={第,章}, 
     number={\chinese{chapter}},
     beforeskip={0pt}, 
     afterskip={18pt}
 ] {chapter}
 
 \CTEXsetup[
-    format={\zihao{4}\ftLoli\centering}
+    format={\zihao{4}\ftLoli\centering},
+    name={第,节}, 
+    number={\chinese{chapter}},
+    beforeskip={0pt}, 
+    afterskip={18pt}
 ]{section}
 
 \CTEXsetup[
     format={\zihao{-4}\heiti}, 
+    name={,、}, 
+    number={\chinese{subsection}},
+    beforeskip={0pt}, 
+    afterskip={18pt},
     indent={2em}
 ]{subsection}
+
+\CTEXsetup[
+    format={\normalsize\heiti}, 
+    name={,.}, 
+    number={\arabic{subsubsection}},
+    beforeskip={3pt}, 
+    afterskip={3pt},
+    indent={2em}
+]{subsubsection}
 
 %设置附录
 \CTEXsetup[name={附录}]{appendix}
